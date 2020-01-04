@@ -2,8 +2,8 @@ import { render } from "@testing-library/react";
 import React from "react";
 import App from "./App";
 
-test("renders learn react link", () => {
+it("renders my name", () => {
   const { getByText } = render(<App />);
-  
+
   expect(getByText("Jean-Philippe Roy")).toBeInTheDocument();
 });
