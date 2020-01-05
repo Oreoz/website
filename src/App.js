@@ -64,7 +64,7 @@ function App() {
         <Details>
           <Title>Jean-Philippe Roy</Title>
           <Subtitle>
-            <RotatingText items={roles} /> from Montreal.
+            <RotatingText items={roles} /> from Montréal.
           </Subtitle>
         </Details>
 
