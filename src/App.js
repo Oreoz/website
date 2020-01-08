@@ -5,7 +5,7 @@ import "./App.css";
 import Container from "./components/Container";
 import { Subtitle, Title } from "./components/Headings";
 
-const RoundImage = styled.img`
+const Avatar = styled.img`
   border-radius: 50%;
   width: 300px;
 `;
@@ -24,6 +24,7 @@ const Details = styled.div`
   @media (min-width: 769px) {
     margin-bottom: 0;
     padding: 0;
+    margin-right: 2rem;
     min-width: 380px;
   }
 `;
@@ -38,9 +39,7 @@ const PresentationSection = styled.section`
 
   @media (min-width: 769px) {
     flex-direction: row;
-    box-shadow: 0.5rem 0.5rem 0.5rem #d3d3d3;
-    border: 1px #d3d3d3 solid;
-    padding: 3rem;
+    margin-top: 5rem;
   }
 `;
 
@@ -68,20 +67,32 @@ function App() {
           </Subtitle>
         </Details>
 
-        <RoundImage src="assets/me.jpg" />
+        <Avatar data-test-id="avatar" src="assets/me.jpg" />
       </PresentationSection>
 
       <SocialSection>
         <a href="https://www.linkedin.com/in/jean-philippe-roy-64918658/">
-          <SocialIcon src="assets/linkedin.svg" alt="LinkedIn" />
+          <SocialIcon
+            data-test-id="linkedin"
+            src="assets/linkedin.svg"
+            alt="LinkedIn"
+          />
         </a>
 
         <a href="https://twitter.com/OhNoesMyOreos">
-          <SocialIcon src="assets/twitter.svg" alt="Twitter" />
+          <SocialIcon
+            data-test-id="twitter"
+            src="assets/twitter.svg"
+            alt="Twitter"
+          />
         </a>
 
         <a href="https://github.com/Oreoz">
-          <SocialIcon src="assets/github.svg" alt="Github" />
+          <SocialIcon
+            data-test-id="github"
+            src="assets/github.svg"
+            alt="Github"
+          />
         </a>
       </SocialSection>
     </Container>
