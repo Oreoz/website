@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^8.1.0",
+    "@testing-library/user-event": "^8.1.1",
     "cypress": "^4.0.2",
     "eslint-plugin-cypress": "^2.9.0",
     "eslint-plugin-react": "^7.18.3",
