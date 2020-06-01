@@ -11,7 +11,7 @@ const Presentation = () => {
     "Dad 👶",
     "Cyclist 🚴‍♂️",
     "Sneakerhead 👟",
-    "Software Engineer 💻"
+    "Software Engineer 💻",
   ]);
 
   return (
@@ -29,7 +29,7 @@ const Presentation = () => {
             </Subtitle>
           </Column>
 
-          <Avatar data-test-id="avatar" src="assets/me.jpg" />
+          <Avatar data-test-id="avatar" src="assets/me.jpg" alt="avatar" />
         </FlexSwitch>
       </Gutters>
     </>
