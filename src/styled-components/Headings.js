@@ -7,7 +7,7 @@ const Title = styled.h1`
   font-size: 2.5rem;
 `;
 
-const Subtitle = styled.h3`
+const Subtitle = styled.h2`
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
