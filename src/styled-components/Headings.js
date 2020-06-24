@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 const Title = styled.h1`
-  margin: 0 0 1rem 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
 `;
 
 const Subtitle = styled.h2`
-  margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  min-height: 28px;
-  line-height: 28px;
+  line-height: 20px;
+  margin: 8px 0;
+  text-align: center;
 `;
 
 export { Title, Subtitle };
