@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import RotatingText from "react-rotating-text";
 import "./App.css";
+import Socials from "./Socials";
 import Avatar from "./styled-components/Avatar";
 import Container from "./styled-components/Container";
-import { Row } from "./styled-components/Flex";
+import { Column } from "./styled-components/Flex";
 import { Subtitle, Title } from "./styled-components/Headings";
-import SocialIcon from "./styled-components/SocialIcon";
+import Paragraph from "./styled-components/Paragraph";
 
 function App() {
   const [roles] = useState([
@@ -30,34 +31,29 @@ function App() {
         <Title>Jean-Philippe Roy</Title>
 
         <Subtitle>
-          <RotatingText items={roles} /> from Montréal.
+          <RotatingText items={roles} />
         </Subtitle>
 
-        <Row justifyContent="center" mt={2}>
-          <a href="https://www.linkedin.com/in/jean-philippe-roy-64918658/">
-            <SocialIcon
-              data-test-id="linkedin"
-              src="assets/linkedin.svg"
-              alt="LinkedIn"
-            />
-          </a>
+        <Column style={{ maxWidth: 750, marginTop: 16 }}>
+          <Paragraph data-test-id="paragraph-1">
+            I am a software engineer, passionate about JavaScript & building
+            quality software. Most of my work so far has been done using modern
+            JavaScript framworks like Ember.js and React.
+          </Paragraph>
 
-          <a href="https://twitter.com/OhNoesMyOreos">
-            <SocialIcon
-              data-test-id="twitter"
-              src="assets/twitter.svg"
-              alt="Twitter"
-            />
-          </a>
+          <Paragraph data-test-id="paragraph-2">
+            Outside of programming and taking care of my little one. I enjoy
+            playing video games, board games, watching movies, listening to
+            music, cycling & drinking craft beer with friends.
+          </Paragraph>
 
-          <a href="https://github.com/Oreoz">
-            <SocialIcon
-              data-test-id="github"
-              src="assets/github.svg"
-              alt="Github"
-            />
-          </a>
-        </Row>
+          <Paragraph data-test-id="paragraph-3">
+            If you're looking to contact me for profesionnal inquiries, your
+            best bet would be LinkedIn.
+          </Paragraph>
+        </Column>
+
+        <Socials />
       </div>
     </Container>
   );

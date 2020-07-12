@@ -3,9 +3,12 @@
 describe("landing page", () => {
   beforeEach(() => cy.visit("http://localhost:3000"));
 
-  it("displays my name and provenance", () => {
+  it("displays my name and story", () => {
     cy.contains("Jean-Philippe Roy").should("be.visible");
-    cy.contains("from Montréal").should("be.visible");
+
+    cy.get('[data-test-id="paragraph-1"]').should("exist");
+    cy.get('[data-test-id="paragraph-2"]').should("exist");
+    cy.get('[data-test-id="paragraph-3"]').should("exist");
   });
 
   it("displays my avatar", () => {
