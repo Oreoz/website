@@ -13,7 +13,7 @@
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
     "react-scripts": "3.4.1",
-    "start-server-and-test": "^1.11.0",
+    "start-server-and-test": "^1.11.1",
     "styled-components": "^5.1.1"
   },
   "scripts": {
