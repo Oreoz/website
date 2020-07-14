@@ -26,7 +26,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <Avatar data-test-id="avatar" src="assets/me.jpg" alt="avatar" />
+        <Avatar data-test-id="avatar" src="assets/me.jpg" alt="that's me" />
 
         <Title>Jean-Philippe Roy</Title>
 
@@ -48,8 +48,8 @@ function App() {
           </Paragraph>
 
           <Paragraph data-test-id="paragraph-3">
-            If you're looking to contact me for profesionnal inquiries, your
-            best bet would be LinkedIn.
+            If you&apos;re looking to contact me for profesionnal inquiries,
+            your best bet would be LinkedIn.
           </Paragraph>
         </Column>
 
