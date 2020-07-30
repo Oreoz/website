@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-const Row = styled.div`
+const Flex = styled.div`
   display: flex;
+`;
+
+const Row = styled(Flex)`
+  align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
-  margin-top: ${(props) => props.mt}rem;
 `;
 
 const Column = styled(Row)`
