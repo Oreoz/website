@@ -7,11 +7,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Rubik", sans-serif;
-  background: linear-gradient(
-    rgba(255, 248, 216, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background-repeat: no-repeat;
 }
 
 .react-rotating-text-cursor {

@@ -1,6 +1,6 @@
 import React from "react";
-import { Column } from "./styled-components/Flex";
-import Paragraph from "./styled-components/Paragraph";
+import { Column } from "../styled-components/Flex";
+import Paragraph from "../styled-components/Paragraph";
 
 const Bio = () => {
   return (
