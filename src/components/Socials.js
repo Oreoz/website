@@ -1,7 +1,7 @@
 import React from "react";
 import Anchor from "./Anchor";
-import { Row } from "./styled-components/Flex";
-import SocialIcon from "./styled-components/SocialIcon";
+import { Row } from "../styled-components/Flex";
+import SocialIcon from "../styled-components/SocialIcon";
 
 const Socials = () => (
   <Row justifyContent="center" style={{ marginTop: 16 }}>

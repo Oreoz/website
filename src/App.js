@@ -1,35 +1,17 @@
 import React from "react";
-import RotatingText from "react-rotating-text";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Bio from "./Bio";
-import Socials from "./Socials";
-import Avatar from "./styled-components/Avatar";
-import Container from "./styled-components/Container";
-import { Subtitle, Title } from "./styled-components/Headings";
-
-const ROLES = [
-  "Dad 👶",
-  "Software Engineer 💻",
-  "Cyclist 🚴‍♂️",
-  "Sneakerhead 👟",
-  "Metalhead 🤟",
-];
+import Index from "./routes/Index";
+import Shortener from "./routes/Shortener";
 
 const App = () => {
   return (
-    <Container alignItems="center">
-      <Avatar data-test-id="avatar" src="assets/me.jpg" alt="that's me" />
-
-      <Title>Jean-Philippe Roy</Title>
-
-      <Subtitle>
-        <RotatingText items={ROLES} />
-      </Subtitle>
-
-      <Bio />
-
-      <Socials />
-    </Container>
+    <Router>
+      <Switch>
+        <Route path="/" component={Index} exact />
+        <Route path="/:id" component={Shortener} />
+      </Switch>
+    </Router>
   );
 };
 
