@@ -9,7 +9,7 @@
     "cypress": "^4.12.1",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-react": "^7.20.5",
-    "firebase": "^7.17.2",
+    "firebase": "^7.19.0",
     "formik": "^2.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
