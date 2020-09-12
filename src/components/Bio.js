@@ -2,7 +2,7 @@ import React from "react";
 import { Column } from "../styled-components/Flex";
 import Paragraph from "../styled-components/Paragraph";
 
-const Bio = () => {
+export default function Bio() {
   return (
     <Column style={{ maxWidth: 750, marginTop: 16 }}>
       <Paragraph data-test-id="paragraph-1">
@@ -23,6 +23,4 @@ const Bio = () => {
       </Paragraph>
     </Column>
   );
-};
-
-export default Bio;
+}
