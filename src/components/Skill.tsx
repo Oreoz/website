@@ -8,7 +8,6 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 
 const Skill: FC<Props> = ({ name, level = 0, ...passthrough }) => {
   const [skillLevel, setSkillLevel] = useState(0);
-  console.log({ skillLevel });
 
   useOnRender(() => setSkillLevel(level));
 

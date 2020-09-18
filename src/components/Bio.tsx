@@ -6,7 +6,7 @@ const Bio: FC = () => {
       <p className="text-justify" data-test-id="paragraph-1">
         I am a software engineer, passionate about JavaScript & building quality
         software. Most of my work so far has been done using modern JavaScript
-        framworks like Ember.js and React.
+        in the browser using Ember.js and React.
       </p>
 
       <p className="text-justify" data-test-id="paragraph-2">
