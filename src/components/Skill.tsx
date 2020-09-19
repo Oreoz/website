@@ -15,13 +15,23 @@ const Skill: FC<Props> = ({ name, level = 0, ...passthrough }) => {
     <div {...passthrough}>
       <label className="mb-1">{name}</label>
 
-      <div className="h-6 bg-gray-300">
-        <div
-          className="h-full bg-orange-300 transition-all ease-linear duration-1000"
-          style={{
-            width: `${skillLevel * 10}%`,
-          }}
-        />
+      <div className="flex items-center">
+        <span role="img" aria-label="weak">
+          🔨
+        </span>
+
+        <div className="w-full h-3 bg-gray-400 mx-1 my-2">
+          <div
+            className="h-full bg-teal-500 transition-all ease-linear duration-1000"
+            style={{
+              width: `${skillLevel * 10}%`,
+            }}
+          />
+        </div>
+
+        <span role="img" aria-label="strong">
+          💪
+        </span>
       </div>
     </div>
   );

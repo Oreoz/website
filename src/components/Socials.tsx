@@ -1,46 +1,35 @@
 import React, { FC } from "react";
+import ExternalLink from "./ExternalLink";
 
 const Socials: FC = () => {
   return (
     <div className="content-center mt-4">
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/jean-philippe-roy-64918658"
-      >
+      <ExternalLink href="https://www.linkedin.com/in/jean-philippe-roy-64918658">
         <img
           className="h-8 mx-1"
           data-test-id="linkedin"
           src="assets/linkedin.svg"
           alt="LinkedIn"
         />
-      </a>
+      </ExternalLink>
 
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/OhNoesMyOreos"
-      >
+      <ExternalLink href="https://twitter.com/OhNoesMyOreos">
         <img
           className="h-8 mx-1"
           data-test-id="twitter"
           src="assets/twitter.svg"
           alt="Twitter"
         />
-      </a>
+      </ExternalLink>
 
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/Oreoz"
-      >
+      <ExternalLink href="https://github.com/Oreoz">
         <img
           className="h-8 mx-1"
           data-test-id="github"
           src="assets/github.svg"
           alt="Github"
         />
-      </a>
+      </ExternalLink>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Resume from "./routes/Resume";
 
 export default function App() {
   return (
-    <div className="flex flex-col items-center max-w-screen-md mx-auto px-6 mt-8">
+    <div className="flex flex-col items-center max-w-screen-md mx-auto px-6 my-6">
       <Router>
         <Switch>
           <Route path="/" component={Index} exact />

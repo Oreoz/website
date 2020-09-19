@@ -3,7 +3,6 @@ import RotatingText from "react-rotating-text";
 import Bio from "../components/Bio";
 import Socials from "../components/Socials";
 import Roles from "../data/roles";
-import { Subtitle, Title } from "../styled-components/Headings";
 
 const Index: FC = () => {
   return (
@@ -15,11 +14,9 @@ const Index: FC = () => {
         alt="that's me"
       />
 
-      <Title>Jean-Philippe Roy</Title>
+      <h1 className="text-center">Jean-Philippe Roy</h1>
 
-      <Subtitle>
-        <RotatingText items={Roles} />
-      </Subtitle>
+      <RotatingText className="font-medium leading-5" items={Roles} />
 
       <Bio />
 
