@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 import Skill from "../components/Skill";
-import { Title } from "../styled-components/Headings";
 
 const Resume: FC = () => {
   return (
     <>
-      <Title>Resume</Title>
+      <h1>Resume</h1>
 
       <Skill className="w-full mb-2" name="React" level={8} />
       <Skill className="w-full mb-2" name="JavaScript" level={9} />
