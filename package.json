@@ -9,7 +9,7 @@
     "@types/react-router-dom": "^5.1.5",
     "cypress": "^5.1.0",
     "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react": "^7.21.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
