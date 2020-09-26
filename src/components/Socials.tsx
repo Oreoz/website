@@ -3,7 +3,7 @@ import ExternalLink from "./ExternalLink";
 
 const Socials: FC = () => {
   return (
-    <div className="content-center mt-4">
+    <div className="flex mt-4">
       <ExternalLink href="https://www.linkedin.com/in/jean-philippe-roy-64918658">
         <img
           className="h-8 mx-1"

@@ -14,9 +14,9 @@ const Index: FC = () => {
         alt="that's me"
       />
 
-      <h1 className="text-center">Jean-Philippe Roy</h1>
+      <h1 className="font-semibold text-3xl text-center">Jean-Philippe Roy</h1>
 
-      <RotatingText className="font-medium leading-5" items={Roles} />
+      <RotatingText className="font-medium text-lg" items={Roles} />
 
       <Bio />
 
