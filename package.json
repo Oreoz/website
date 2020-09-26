@@ -7,9 +7,12 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
+    "autoprefixer": "^10.0.0",
     "cypress": "^5.1.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-react": "^7.21.2",
+    "postcss": "^8.0.9",
+    "postcss-cli": "^8.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
@@ -21,12 +24,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:css && react-scripts build",
     "test": "start-server-and-test start http://localhost:3000 cy:run",
     "eject": "react-scripts eject",
     "lint": "",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css -w"
   },
   "eslintConfig": {
     "extends": "react-app"
