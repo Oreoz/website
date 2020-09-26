@@ -1,21 +1,10 @@
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: "Rubik", sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
     infinite;
-}
-
-.mb-1 {
-  margin-bottom: 4px;
-}
-
-.mb-2 {
-  margin-bottom: 8px;
 }
 
 @keyframes blinking-cursor {
