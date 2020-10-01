@@ -5,3 +5,10 @@
 # Website
 
 This is my personal website, written with React. It's meant to be quite simple.
+
+## Tools 🛠
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PostCSS](https://postcss.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
