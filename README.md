@@ -6,7 +6,7 @@
 
 This is my personal website, written with React. It's meant to be quite simple.
 
-## Tools 🛠
+## Contents Of My Website 🛠
 
 - [Create React App](https://github.com/facebook/create-react-app)
 - [TypeScript](https://www.typescriptlang.org/)
