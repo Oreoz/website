@@ -13,7 +13,7 @@
     "eslint-plugin-react": "^7.21.4",
     "postcss": "^8.1.1",
     "postcss-cli": "^8.1.0",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0",
