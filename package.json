@@ -18,7 +18,7 @@
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
-    "start-server-and-test": "^1.11.5",
+    "start-server-and-test": "^1.11.6",
     "tailwindcss": "^1.9.6",
     "typescript": "^4.0.5"
   },
