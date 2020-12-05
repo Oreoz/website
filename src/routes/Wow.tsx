@@ -14,17 +14,16 @@ const Wow: FC = () => {
     });
   }, [state]);
 
-  const backgroundColor = useMemo(
-    () => (ratios.enemies < ratios.allies ? "bg-green-400" : "bg-red-400"),
-    [ratios]
-  );
+  const success = useMemo(() => ratios.enemies < ratios.allies, [ratios]);
 
   return (
     <>
       <h1 className="text-2xl font-bold">Shadowlands Table Calculator</h1>
 
       <div
-        className={`${backgroundColor} rounded-full h-20 w-20 m-4`}
+        className={`${
+          success ? "bg-green-400" : "bg-red-400"
+        } rounded-full h-20 w-20 m-4`}
         data-test-id="success-indicator"
       ></div>
 
