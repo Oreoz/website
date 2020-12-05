@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Index from "./routes/Index";
 import Resume from "./routes/Resume";
+import Wow from "./routes/Wow";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <Switch>
           <Route path="/" component={Index} exact />
           <Route path="/resume" component={Resume} />
+          <Route path="/wow" component={Wow} />
         </Switch>
       </Router>
     </div>
