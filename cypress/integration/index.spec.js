@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("landing page", () => {
+describe("index", () => {
   beforeEach(() => cy.visit("http://localhost:3000"));
 
   it("displays my name and story", () => {
