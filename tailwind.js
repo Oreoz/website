@@ -3,12 +3,14 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: {
-    content: ["./src/**/*.tsx"],
-    options: {
-      safelist: ["border"],
-    },
-  },
+
+  // purge: {
+  //   content: ["./src/**/*.tsx"],
+  //   options: {
+  //     safelist: ["border"],
+  //   },
+  // },
+
   prefix: "",
   important: false,
   separator: ":",
