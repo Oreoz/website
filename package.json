@@ -30,9 +30,7 @@
     "eject": "react-scripts eject",
     "lint": "",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css -w"
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
