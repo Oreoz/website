@@ -19,7 +19,6 @@ jobs:
       - name: build and test
         run: |
           npm ci
-          npm run build:css
           npm run build
           npm test
         env:
