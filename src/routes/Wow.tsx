@@ -23,15 +23,24 @@ const Wow: FC = () => {
     <>
       <h1 className="text-2xl font-bold">Shadowlands Table Calculator</h1>
 
-      <div className={`${backgroundColor} rounded-full h-20 w-20 m-4`}></div>
+      <div
+        className={`${backgroundColor} rounded-full h-20 w-20 m-4`}
+        data-test-id="success-indicator"
+      ></div>
 
       <h2 className="text-lg font-semibold leading-8 mt-2">Enemy Forces</h2>
-      <h3 className="text-lg mb-2 italic text-gray-700">{ratios.enemies}</h3>
+      <h3
+        className="text-lg mb-2 italic text-gray-700"
+        data-test-id="enemy-ratio"
+      >
+        {ratios.enemies}
+      </h3>
 
       <div className="flex items-center">
         <span className="mx-2">⚔</span>
         <input
           className="border border-gray-500 rounded p-2"
+          data-test-id="enemy-atk"
           type="number"
           min="0"
           value={state.enemies.atk}
@@ -46,6 +55,7 @@ const Wow: FC = () => {
         <span className="mx-2">🛡</span>
         <input
           className="border border-gray-500 rounded p-2"
+          data-test-id="enemy-def"
           type="number"
           min="0"
           value={state.enemies.def}
@@ -59,12 +69,18 @@ const Wow: FC = () => {
       </div>
 
       <h2 className="text-lg font-semibold leading-8 mt-2">Your Squad</h2>
-      <h3 className="text-lg mb-2 italic text-gray-700">{ratios.allies}</h3>
+      <h3
+        className="text-lg mb-2 italic text-gray-700"
+        data-test-id="ally-ratio"
+      >
+        {ratios.allies}
+      </h3>
 
       <div className="flex items-center">
         <span className="mx-2">⚔</span>
         <input
           className="border border-gray-500 rounded p-2"
+          data-test-id="ally-atk"
           type="number"
           min="0"
           value={state.allies.atk}
@@ -79,6 +95,7 @@ const Wow: FC = () => {
         <span className="mx-2">🛡</span>
         <input
           className="border border-gray-500 rounded p-2"
+          data-test-id="ally-def"
           type="number"
           min="0"
           value={state.allies.def}
