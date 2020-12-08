@@ -9,7 +9,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
     "autoprefixer": "^9.8.6",
-    "cypress": "^6.0.1",
+    "cypress": "^6.1.0",
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-react": "^7.21.5",
     "postcss": "^7.0.35",
