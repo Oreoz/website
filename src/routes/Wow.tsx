@@ -18,7 +18,7 @@ const Wow: FC = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold">Shadowlands Table Calculator</h1>
+      <h1 className="text-2xl text-center font-bold">Table Calculator</h1>
 
       <div
         className={`${
@@ -35,36 +35,40 @@ const Wow: FC = () => {
         {ratios.enemies}
       </h3>
 
-      <div className="flex items-center">
-        <span className="mx-2">⚔</span>
-        <input
-          className="border border-gray-500 rounded p-2"
-          data-test-id="enemy-atk"
-          type="number"
-          min="0"
-          value={state.enemies.atk}
-          onChange={(event) =>
-            setState({
-              ...state,
-              enemies: { ...state.enemies, atk: Number(event.target.value) },
-            })
-          }
-        />
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="flex flex-grow items-center">
+          <span className="mx-2 w-6">🛡</span>
+          <input
+            className="border border-gray-500 rounded p-2 flex flex-grow"
+            data-test-id="enemy-def"
+            type="number"
+            min="0"
+            value={state.enemies.def}
+            onChange={(event) =>
+              setState({
+                ...state,
+                enemies: { ...state.enemies, def: Number(event.target.value) },
+              })
+            }
+          />
+        </div>
 
-        <span className="mx-2">🛡</span>
-        <input
-          className="border border-gray-500 rounded p-2"
-          data-test-id="enemy-def"
-          type="number"
-          min="0"
-          value={state.enemies.def}
-          onChange={(event) =>
-            setState({
-              ...state,
-              enemies: { ...state.enemies, def: Number(event.target.value) },
-            })
-          }
-        />
+        <div className="flex flex-grow items-center mt-2 md:mt-0">
+          <span className="mx-2 w-6">⚔</span>
+          <input
+            className="border border-gray-500 rounded p-2 flex flex-grow"
+            data-test-id="enemy-atk"
+            type="number"
+            min="0"
+            value={state.enemies.atk}
+            onChange={(event) =>
+              setState({
+                ...state,
+                enemies: { ...state.enemies, atk: Number(event.target.value) },
+              })
+            }
+          />
+        </div>
       </div>
 
       <h2 className="text-lg font-semibold leading-8 mt-2">Your Squad</h2>
@@ -75,36 +79,40 @@ const Wow: FC = () => {
         {ratios.allies}
       </h3>
 
-      <div className="flex items-center">
-        <span className="mx-2">⚔</span>
-        <input
-          className="border border-gray-500 rounded p-2"
-          data-test-id="ally-atk"
-          type="number"
-          min="0"
-          value={state.allies.atk}
-          onChange={(event) =>
-            setState({
-              ...state,
-              allies: { ...state.allies, atk: Number(event.target.value) },
-            })
-          }
-        />
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="flex flex-grow items-center">
+          <span className="mx-2 w-6">🛡</span>
+          <input
+            className="border border-gray-500 rounded p-2 flex flex-grow"
+            data-test-id="ally-def"
+            type="number"
+            min="0"
+            value={state.allies.def}
+            onChange={(event) =>
+              setState({
+                ...state,
+                allies: { ...state.allies, def: Number(event.target.value) },
+              })
+            }
+          />
+        </div>
 
-        <span className="mx-2">🛡</span>
-        <input
-          className="border border-gray-500 rounded p-2"
-          data-test-id="ally-def"
-          type="number"
-          min="0"
-          value={state.allies.def}
-          onChange={(event) =>
-            setState({
-              ...state,
-              allies: { ...state.allies, def: Number(event.target.value) },
-            })
-          }
-        />
+        <div className="flex flex-grow items-center mt-2 md:mt-0">
+          <span className="mx-2 w-6">⚔</span>
+          <input
+            className="border border-gray-500 rounded p-2 flex flex-grow"
+            data-test-id="ally-atk"
+            type="number"
+            min="0"
+            value={state.allies.atk}
+            onChange={(event) =>
+              setState({
+                ...state,
+                allies: { ...state.allies, atk: Number(event.target.value) },
+              })
+            }
+          />
+        </div>
       </div>
     </>
   );
