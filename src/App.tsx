@@ -5,13 +5,11 @@ import Resume from "./routes/Resume";
 
 export default function App() {
   return (
-    <div className="flex flex-col items-center max-w-screen-md mx-auto p-6">
-      <Router>
-        <Switch>
-          <Route path="/" component={Index} exact />
-          <Route path="/resume" component={Resume} />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Index} exact />
+        <Route path="/resume" component={Resume} />
+      </Switch>
+    </Router>
   );
 }

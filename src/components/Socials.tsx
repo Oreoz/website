@@ -5,30 +5,23 @@ const Socials: FC = () => {
   return (
     <div className="flex mt-4">
       <ExternalLink href="https://www.linkedin.com/in/jean-philippe-roy-64918658">
-        <img
-          className="h-8 mx-1"
-          data-test-id="linkedin"
-          src="assets/linkedin.svg"
-          alt="LinkedIn"
-        />
-      </ExternalLink>
-
-      <ExternalLink href="https://twitter.com/OhNoesMyOreos">
-        <img
-          className="h-8 mx-1"
-          data-test-id="twitter"
-          src="assets/twitter.svg"
-          alt="Twitter"
-        />
+        <span
+          role="img"
+          aria-label="LinkedIn"
+          className="social-shapes text-4xl mx-1"
+        >
+          k
+        </span>
       </ExternalLink>
 
       <ExternalLink href="https://github.com/Oreoz">
-        <img
-          className="h-8 mx-1"
-          data-test-id="github"
-          src="assets/github.svg"
-          alt="Github"
-        />
+        <span
+          role="img"
+          aria-label="GitHub"
+          className="social-shapes text-4xl mx-1"
+        >
+          Y
+        </span>
       </ExternalLink>
     </div>
   );
