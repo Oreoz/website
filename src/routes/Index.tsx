@@ -1,27 +1,34 @@
 import React, { FC } from "react";
-import RotatingText from "react-rotating-text";
 import Bio from "../components/Bio";
+import Portrait from "../components/Portrait";
 import Socials from "../components/Socials";
-import Roles from "../data/roles";
+import Title from "../components/Title";
+import Nav from "../components/Nav";
+
+const ThemeTransition = {
+  transitionDuration: "0.5s",
+  transitionProperty: "background-color, color",
+  transitionTimingFunction: "linear",
+};
 
 const Index: FC = () => {
   return (
-    <>
-      <img
-        className="rounded-full w-50 max-w-300 max-w-xs w-2/3 mb-4"
-        data-test-id="avatar"
-        src="assets/me.jpg"
-        alt="that's me"
-      />
+    <div
+      className="dark:bg-gray-900 dark:text-gray-50 min-h-screen"
+      style={{ ...ThemeTransition }}
+    >
+      <Nav />
 
-      <h1 className="font-semibold text-3xl text-center">Jean-Philippe Roy</h1>
+      <div className="flex flex-col items-center max-w-screen-md mx-auto p-6">
+        <Portrait />
 
-      <RotatingText className="font-medium text-lg" items={Roles} />
+        <Title />
 
-      <Bio />
+        <Bio />
 
-      <Socials />
-    </>
+        <Socials />
+      </div>
+    </div>
   );
 };
 

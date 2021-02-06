@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Social Shapes";
+  src: url("../fonts/social-shapes.woff") format("woff"),
+    url("../fonts/social-shapes.woff2") format("woff2");
+}
+
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
     infinite;
@@ -17,4 +23,8 @@
   100% {
     opacity: 0;
   }
+}
+
+.social-shapes {
+  font-family: "Social Shapes";
 }
