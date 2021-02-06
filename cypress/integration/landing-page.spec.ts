@@ -11,7 +11,7 @@ const viewports: Cypress.ViewportPreset[] = [
 ];
 
 viewports.forEach((viewport) => {
-  describe(`index (${viewport})`, () => {
+  describe(`landing page (${viewport})`, () => {
     beforeEach(() => {
       cy.viewport(viewport);
       cy.visit("http://localhost:3000");
