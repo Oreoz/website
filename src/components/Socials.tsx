@@ -4,7 +4,10 @@ import ExternalLink from "./ExternalLink";
 const Socials: FC = () => {
   return (
     <div className="flex mt-4">
-      <ExternalLink href="https://www.linkedin.com/in/jean-philippe-roy-64918658">
+      <ExternalLink
+        data-test-id="linkedin"
+        href="https://www.linkedin.com/in/jean-philippe-roy-64918658"
+      >
         <span
           role="img"
           aria-label="LinkedIn"
@@ -14,7 +17,7 @@ const Socials: FC = () => {
         </span>
       </ExternalLink>
 
-      <ExternalLink href="https://github.com/Oreoz">
+      <ExternalLink data-test-id="github" href="https://github.com/Oreoz">
         <span
           role="img"
           aria-label="GitHub"

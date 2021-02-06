@@ -17,7 +17,18 @@ describe("index", () => {
 
   it("displays social icons", () => {
     cy.get('[data-test-id="linkedin"]').should("be.visible");
-    cy.get('[data-test-id="twitter"]').should("be.visible");
     cy.get('[data-test-id="github"]').should("be.visible");
+  });
+
+  it("allows the user to switch themes", () => {
+    cy.get("html").should("not.have.class", "dark");
+
+    cy.get(`[data-test-id="theme-switch"]`)
+      .should("be.visible")
+      .should("have.text", "🦉")
+      .click()
+      .should("have.text", "🦚");
+
+    cy.get("html").should("have.class", "dark");
   });
 });
