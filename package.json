@@ -6,7 +6,7 @@
     "@types/node": "^16.11.4",
     "@types/react": "^17.0.32",
     "@types/react-dom": "^17.0.10",
-    "@types/react-router-dom": "^5.3.1",
+    "@types/react-router-dom": "^5.3.2",
     "autoprefixer": "^10.3.7",
     "cypress": "^8.6.0",
     "eslint-plugin-cypress": "^2.12.1",
