@@ -12,16 +12,16 @@
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-react": "^7.29.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.8",
     "postcss-cli": "^9.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
     "react-rotating-text": "^1.4.1",
-    "react-router-dom": "^6.2.1",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "4.0.3",
     "start-server-and-test": "^1.14.0",
     "tailwindcss": "^3.0.23",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
