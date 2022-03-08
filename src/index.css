@@ -5,8 +5,8 @@
 @font-face {
   font-display: swap;
   font-family: "Social Shapes";
-  src: url("../fonts/social-shapes.woff") format("woff"),
-    url("../fonts/social-shapes.woff2") format("woff2");
+  src: url("./fonts/social-shapes.woff") format("woff"),
+    url("./fonts/social-shapes.woff2") format("woff2");
 }
 
 .react-rotating-text-cursor {
