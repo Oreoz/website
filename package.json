@@ -6,33 +6,27 @@
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
-    "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.2",
     "cypress": "^9.5.1",
     "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-react": "^7.29.3",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.8",
     "postcss-cli": "^9.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.0",
     "start-server-and-test": "^1.14.0",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "run-s build:css build:react",
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
-    "build:react": "react-scripts build",
+    "build": "react-scripts build",
     "test": "start-server-and-test start http://localhost:3000 cy:run",
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css -w"
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
