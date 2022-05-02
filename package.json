@@ -11,7 +11,7 @@
     "eslint-plugin-cypress": "^2.12.1",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
-    "react": "^18.0.0",
+    "react": "^18.1.0",
     "react-dom": "^18.0.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.3.0",
