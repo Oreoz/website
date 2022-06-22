@@ -1,12 +1,15 @@
 import React, { FC } from "react";
-import ExternalLink from "./ExternalLink";
+import { motion } from "framer-motion";
 
 const Socials: FC = () => {
   return (
     <div className="flex mt-4">
-      <ExternalLink
+      <motion.a
         data-test-id="linkedin"
         href="https://www.linkedin.com/in/jean-philippe-roy-64918658"
+        rel="noopener noreferrer"
+        target="_blank"
+        whileHover={{ scale: 1.1 }}
       >
         <span
           role="img"
@@ -15,9 +18,15 @@ const Socials: FC = () => {
         >
           k
         </span>
-      </ExternalLink>
+      </motion.a>
 
-      <ExternalLink data-test-id="github" href="https://github.com/Oreoz">
+      <motion.a
+        data-test-id="github"
+        href="https://github.com/Oreoz"
+        rel="noopener noreferrer"
+        target="_blank"
+        whileHover={{ scale: 1.1 }}
+      >
         <span
           role="img"
           aria-label="GitHub"
@@ -25,7 +34,7 @@ const Socials: FC = () => {
         >
           Y
         </span>
-      </ExternalLink>
+      </motion.a>
     </div>
   );
 };

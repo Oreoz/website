@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 type Theme = "dark" | "light";
 
@@ -25,13 +26,14 @@ const ThemeSwitch: FC = () => {
   const handleOnClick = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
-    <button
-      data-test-id="theme-switch"
+    <motion.button
       className="text-3xl p-1 m-1"
+      data-test-id="theme-switch"
       onClick={handleOnClick}
+      whileHover={{ scale: 1.2 }}
     >
       {emoji}
-    </button>
+    </motion.button>
   );
 };
 
