@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@types/node": "^18.0.1",
-    "@types/react": "^18.0.14",
+    "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
     "cypress": "^10.3.0",
