@@ -10,7 +10,7 @@
     "eslint-plugin-cypress": "^2.12.1",
     "framer-motion": "^7.6.15",
     "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0",
+    "postcss-cli": "^10.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.2.0",
     "react-rotating-text": "^1.4.1",
