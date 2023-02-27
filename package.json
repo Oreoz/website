@@ -6,7 +6,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.13",
-    "cypress": "^12.5.1",
+    "cypress": "^12.7.0",
     "eslint-plugin-cypress": "^2.12.1",
     "framer-motion": "^9.0.2",
     "postcss": "^8.4.21",
