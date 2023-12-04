@@ -8,7 +8,7 @@
     "autoprefixer": "^10.4.16",
     "cypress": "^13.6.0",
     "eslint-plugin-cypress": "^2.15.1",
-    "framer-motion": "^10.16.5",
+    "framer-motion": "^10.16.12",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "react": "^18.1.0",
