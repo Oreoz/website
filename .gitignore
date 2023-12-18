@@ -12,7 +12,7 @@ src/styles/app.css
 /coverage
 
 # production
-dist
+build
 
 # misc
 .DS_Store
