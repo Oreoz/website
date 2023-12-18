@@ -9,7 +9,7 @@
     "cypress": "^13.6.1",
     "framer-motion": "^10.16.16",
     "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
+    "postcss-cli": "^11.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.2.0",
     "react-rotating-text": "^1.4.1",
