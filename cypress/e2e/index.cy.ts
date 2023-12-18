@@ -14,7 +14,7 @@ viewports.forEach((viewport) => {
   describe(`landing page (${viewport})`, () => {
     beforeEach(() => {
       cy.viewport(viewport);
-      cy.visit("http://localhost:3000");
+      cy.visit("http://localhost:5173");
     });
 
     it("displays my name and story", () => {

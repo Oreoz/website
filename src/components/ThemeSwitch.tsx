@@ -1,14 +1,13 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
 type Theme = "dark" | "light";
 
 const ThemeSwitch: FC = () => {
   const [theme, setTheme] = useState<Theme>("light");
-  const [emoji, setEmoji] = useState("");
 
-  useEffect(() => {
-    setEmoji(theme === "dark" ? "🦚" : "🦉");
+  const emoji = useMemo(() => {
+    return theme === "dark" ? "🦚" : "🦉";
   }, [theme]);
 
   useEffect(() => {
@@ -23,13 +22,11 @@ const ThemeSwitch: FC = () => {
     }
   }, [theme]);
 
-  const handleOnClick = () => setTheme(theme === "dark" ? "light" : "dark");
-
   return (
     <motion.button
       className="text-3xl p-1 m-1"
       data-test-id="theme-switch"
-      onClick={handleOnClick}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       whileHover={{ scale: 1.2 }}
     >
       {emoji}
