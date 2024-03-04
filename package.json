@@ -5,7 +5,7 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.18",
     "cypress": "^13.6.4",
     "framer-motion": "^11.0.6",
     "postcss": "^8.4.35",
