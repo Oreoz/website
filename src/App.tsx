@@ -1,4 +1,3 @@
-import React from "react";
 import RotatingText from "react-rotating-text";
 import { motion } from "framer-motion";
 import Nav from "./components/Nav";
