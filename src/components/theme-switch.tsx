@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 type Theme = "dark" | "light";
 
-const ThemeSwitch = () => {
+export const ThemeSwitch = () => {
   const [theme, setTheme] = useState<Theme>("light");
 
   const emoji = useMemo(() => {
@@ -33,5 +33,3 @@ const ThemeSwitch = () => {
     </motion.button>
   );
 };
-
-export default ThemeSwitch;
