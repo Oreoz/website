@@ -6,7 +6,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.0",
     "autoprefixer": "^10.4.21",
-    "cypress": "^15.4.0",
+    "cypress": "^15.14.1",
     "framer-motion": "^12.23.24",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
